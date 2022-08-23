@@ -55,7 +55,7 @@ int jsoner_parse(jsoner_value *v, const char *json)
     return jsoner_parse_value(&c, v);
 }
 
-jsoner_type lept_get_type(const jsoner_value *v)
+jsoner_type jsoner_get_type(const jsoner_value *v)
 {
     assert(v != NULL);
     return v->type;
